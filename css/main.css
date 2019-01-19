@@ -4,11 +4,12 @@ body {
     background: rgb(50, 36, 99);
 
 }
-
+a{
+    text-decoration: none;
+}
 .menu_item a{
     padding: 20px;
     display: block;
-    text-decoration: none;
     color: rgb(191, 177, 255);
 }
 ul{
@@ -20,7 +21,7 @@ li{
 }
 
 
-a:hover{
+.menu_item a:hover{
     color: rgb(253, 146, 146); 
     background: rgb(56, 40, 110);
 }
@@ -43,11 +44,27 @@ h2{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
-.contetnt{
+.content{
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-around;
     padding: 15px;
+}
+.content_footer{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+.content_footer a{
+    display: inline;
+    color: aliceblue;
+}
+.content_footer i{
+    font-size: 25px;
+    padding-left: 1rem;
 }
 
 
