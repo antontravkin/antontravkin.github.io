@@ -1,11 +1,14 @@
 body {
     margin: 0;
     padding: 0;
-    background: rgb(50, 36, 99);
+    
 
 }
 a{
     text-decoration: none;
+}
+.header{
+    background-image: linear-gradient(to bottom right, rgb(39, 24, 71), rgb(90, 61, 184));
 }
 .menu_item a{
     padding: 20px;
@@ -49,12 +52,16 @@ h2{
     display: flex;
     justify-content: space-around;
     padding: 15px 0;
+    min-height: calc(100vh - 80px);
+}
+.footer{
+    background-image: linear-gradient(to bottom right, rgb(90, 61, 184), rgb(39, 24, 71));
+    width: 100%;
 }
 .content_footer{
     display: flex;
     justify-content: space-around;
     text-align: center;
-    padding: 15px;
     color: white;
 }
 
