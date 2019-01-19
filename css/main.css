@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    background: rgb(50, 36, 99);
+
+}
+
+a{
+    text-decoration: none;
+    color: rgb(191, 177, 255);
+
+}
+
+li{
+    list-style-type: none;
+    margin: 1em;
+}
+
+a:hover{
+    color: rgb(253, 146, 146); 
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.header{
+    display: flex;
+    justify-content: right;
+}
+.section_1{
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding-top: 1em;  
+    padding-bottom: 1em;
+}
+.lang{
+    background: white;
+}
+.photo img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
