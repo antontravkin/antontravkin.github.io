@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
     
 
 }
@@ -15,11 +16,16 @@ li{
     display: inline;
     list-style-type: none;
 }
+h1{
+    margin: 0;
+    font-size: 40px;
+}
 h2{
     text-align: center;
 }
 .header{
-    background-image: linear-gradient(to bottom right, rgb(39, 24, 71), rgb(90, 61, 184));
+    background-image: linear-gradient(to bottom right, rgb(29, 16, 56), rgb(101, 43, 168));
+    height: 100vh;
 }
 .menu_item a{
     padding: 20px;
@@ -31,15 +37,33 @@ h2{
     background: rgb(56, 40, 110);
 }
 .wrap{
-    max-width: 900px;
+    max-width: 1170px;
     margin:  0 auto;
 
 }
 
 .menu{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     margin: 0;
+}
+.hello_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: azure;
+    height: 80vh;
+}
+.hello{
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0;
+}
+.developer{  
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin: 15px;
 }
 .section_1{
     background-color: rgb(255, 255, 255);
@@ -53,19 +77,20 @@ h2{
     min-height: calc(100vh - 80px);
 }
 .footer{
-    background-image: linear-gradient(to bottom right, rgb(90, 61, 184), rgb(39, 24, 71));
+    background-color:  rgb(208, 194, 255);
     width: 100%;
 }
 .content_footer{
     display: flex;
     justify-content: space-around;
     text-align: center;
-    color: white;
+    color: rgb(25, 0, 46);
+
 }
 
 .content_footer a{
     display: inline;
-    color: aliceblue;
+    color: rgb(25, 0, 46);
 }
 .content_footer i{
     font-size: 25px;
