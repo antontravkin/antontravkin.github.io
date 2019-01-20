@@ -28,13 +28,18 @@ h2{
     height: 100vh;
 }
 .menu_item a{
-    padding: 20px;
+    margin-right: 10px;
+    padding: 15px 20px;
     display: block;
     color: rgb(191, 177, 255);
+    border-radius: 10px;
+    background: rgba(128, 128, 128, 0.05);
+
 }
 .menu_item a:hover{
     color: rgb(153, 94, 207); 
-    background: rgb(56, 40, 110);
+    background: rgb(48, 31, 105);
+    border-radius: 10px;
 }
 .wrap{
     max-width: 1170px;
@@ -44,7 +49,6 @@ h2{
 
 .menu{
     display: flex;
-    justify-content: space-around;
     margin: 0;
 }
 .hello_content{
