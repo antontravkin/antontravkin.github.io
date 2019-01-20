@@ -7,6 +7,17 @@ body {
 a{
     text-decoration: none;
 }
+
+ul{
+    padding: 0;
+}
+li{
+    display: inline;
+    list-style-type: none;
+}
+h2{
+    text-align: center;
+}
 .header{
     background-image: linear-gradient(to bottom right, rgb(39, 24, 71), rgb(90, 61, 184));
 }
@@ -15,22 +26,9 @@ a{
     display: block;
     color: rgb(191, 177, 255);
 }
-ul{
-    padding: 0;
-}
-li{
-    display: inline;
-    list-style-type: none;
-}
-
-
 .menu_item a:hover{
     color: rgb(253, 146, 146); 
     background: rgb(56, 40, 110);
-}
-
-h2{
-    text-align: center;
 }
 .wrap{
     max-width: 900px;
