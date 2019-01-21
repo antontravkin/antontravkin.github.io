@@ -52,7 +52,7 @@ h2{
 }
 .header{
     background-image: linear-gradient(to bottom right, rgb(29, 16, 56), rgb(101, 43, 168));
-    height: 100vh;
+    height: 4000px;
 }
 .menu_item a{
     margin-right: 10px;
@@ -69,7 +69,7 @@ h2{
     border-radius: 10px;
 }
 .wrap{
-    max-width: 1170px;
+    max-width: 760px;
     width: 100%;
     margin:  0 auto;
     /*background: gray;*/
@@ -80,6 +80,18 @@ h2{
     display: flex;
     margin: 0;
 }
+
+.mac{
+    display: flex;
+    justify-content: center;
+    width:  400px;
+    
+}
+
+.mac img{
+    width: 100%;
+    opacity: 0;
+}
 .hello_content{
     display: flex;
     justify-content: center;
@@ -89,12 +101,15 @@ h2{
 }
 .wrap_item{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
     flex-grow: 1;
 }
+.wrap_content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .hello{
-    text-align: center;
     font-size: 80px;
     font-weight: 700;
     margin: 0;
