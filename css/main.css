@@ -45,6 +45,7 @@ li{
 h1{
     margin: 0;
     font-size: 40px;
+    opacity: 0;
 }
 h2{
     text-align: center;
@@ -81,26 +82,39 @@ h2{
 }
 .hello_content{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    text-align: center;
+    flex-direction: column;
     color: azure;
-    height: 80vh;
+    height: 90vh;
+}
+.wrap_item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
 }
 .hello{
+    text-align: center;
     font-size: 80px;
     font-weight: 700;
     margin: 0;
 }
 .down{
-    position: absolute;
-    left: 49%;
-    bottom: 0%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    
+}
+.down p, i{
+    opacity: 1;
+}
+.wrap_item1 h1, p{
+    opacity: 0;
 }
 .developer{  
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    margin: 15px;
+    margin: 15px 0;
 }
 .section_1{
     background-color: rgb(255, 255, 255);
