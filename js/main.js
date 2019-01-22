@@ -9,7 +9,7 @@ window.onload = function(){
         $('.wrap_item1').css('transform', 'translateY(' + s  + 'px)');
         $('.mac').css('transform', 'translateY(' + s  + 'px)');
         if (s > 100)          
-            $('.down p, i').css('opacity', 0).css ('transition-duration', '.5s');
+            $('.down p, .down i').css('opacity', 0).css ('transition-duration', '.5s');
         else
             $('.down p, i').css('opacity', 1);
         if (s > 230){

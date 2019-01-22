@@ -52,7 +52,7 @@ h2{
 }
 .header{
     background-image: linear-gradient(to bottom right, rgb(29, 16, 56), rgb(101, 43, 168));
-    height: 150vh;
+    height: 160vh;
 }
 
 .nav{
@@ -163,7 +163,7 @@ h2{
 }
 .content_footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     color: rgb(25, 0, 46);
 
