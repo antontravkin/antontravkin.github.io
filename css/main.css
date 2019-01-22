@@ -52,15 +52,16 @@ h2{
 }
 .header{
     background-image: linear-gradient(to bottom right, rgb(29, 16, 56), rgb(101, 43, 168));
-    height: 4000px;
+    height: 150vh;
 }
 
 .nav{
-    position: fixed; 
+    position: fixed;
+    background: rgba(48, 4, 90, 0.651);
     width: 100%;
     left: 0;
     top: 0;
-    z-index: 99;
+    z-index: 9999;
 }
 .menu_item a{
     margin: 0 10px;
@@ -68,7 +69,7 @@ h2{
     display: block;
     color: rgb(191, 177, 255);
     border-radius: 10px;
-    background: rgba(128, 128, 128, 0.05);
+
 
 }
 .menu_item a:hover{
@@ -152,9 +153,9 @@ h2{
     display: flex;
     justify-content: space-around;
     padding: 15px 0;
-    height: 2000px;
+    height: 10px;
     min-height: calc(100vh - 80px);
-    background-image: linear-gradient(to bottom left, rgb(101, 43, 168), rgb(29, 16, 56));
+    /*background-image: linear-gradient(to bottom left, rgb(101, 43, 168), rgb(29, 16, 56));*/
 }
 .footer{
     background-color:  rgb(208, 194, 255);

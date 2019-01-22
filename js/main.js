@@ -5,7 +5,6 @@ window.onload = function(){
      
         console.log(s);
         $('.hello').css('transform', 'translate(' + (-s + 230) + 'px, ' + s  + 'px)');
-        //$('.hello').css('transition-timing-function', 'step-start');
         $('.down').css('transform', 'translateY(' + s  + 'px)');
         $('.wrap_item1').css('transform', 'translateY(' + s  + 'px)');
         $('.mac').css('transform', 'translateY(' + s  + 'px)');
@@ -33,6 +32,13 @@ window.onload = function(){
         else{
             $('.code').css('display', 'none');
             $('.macbook').css('display', 'block').css ('transition-duration', '.5s');
+        }
+
+        if (s > 500){
+            $('.hello').css('transform', 'translateY(' + 500  + 'px)');
+            $('.down').css('transform', 'translateY(' + 500 + 'px)');
+            $('.wrap_item1').css('transform', 'translateY(' + 500  + 'px)');
+            $('.mac').css('transform', 'translateY(' + 500  + 'px)');
         }
             
         
