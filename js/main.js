@@ -21,10 +21,18 @@ window.onload = function(){
             $('.wrap_item1 h1, .developer').css('opacity', 0).css ('transition-duration', '.5s');
         }
         if (s > 300){
-            $('.mac img').css('opacity', 1).css ('transition-duration', '.5s');
+            $('.macbook').css('opacity', 1).css ('transition-duration', '.5s');
         }
         else{
-            $('.mac img').css('opacity', 0).css ('transition-duration', '.5s');
+            $('.macbook').css('opacity', 0).css ('transition-duration', '.5s');
+        }
+        if (s > 400){
+            $('.macbook').css('opacity', 0).css ('display', 'none');
+            $('.code').css('display', 'block');
+        }
+        else{
+            $('.code').css('display', 'none');
+            $('.macbook').css('display', 'block').css ('transition-duration', '.5s');
         }
             
         

@@ -54,8 +54,16 @@ h2{
     background-image: linear-gradient(to bottom right, rgb(29, 16, 56), rgb(101, 43, 168));
     height: 4000px;
 }
+
+.nav{
+    position: fixed; 
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
 .menu_item a{
-    margin-right: 10px;
+    margin: 0 10px;
     padding: 15px 20px;
     display: block;
     color: rgb(191, 177, 255);
@@ -72,12 +80,11 @@ h2{
     max-width: 760px;
     width: 100%;
     margin:  0 auto;
-    /*background: gray;*/
-
 }
 
 .menu{
     display: flex;
+    justify-content: center;
     margin: 0;
 }
 
@@ -85,19 +92,24 @@ h2{
     display: flex;
     justify-content: center;
     width:  400px;
+    position: relative;
     
 }
 
-.mac img{
+.macbook{
     width: 100%;
     opacity: 0;
+}
+.code{
+    width: 100%;
+    display: none;
 }
 .hello_content{
     display: flex;
     justify-content: center;
     flex-direction: column;
     color: azure;
-    height: 90vh;
+    height: 100vh;
 }
 .wrap_item{
     display: flex;
