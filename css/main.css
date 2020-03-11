@@ -395,6 +395,23 @@ span {
         flex: none;
         max-width: 100%;
     }
+
+    .cloud__item {
+        left: -40%;
+        width: 46%;
+    }
+
+    .cloud__item1 {
+        margin-top: 51%;
+        left: -30%;
+        width: 33%;
+    }
+
+    .cloud__item2 {
+        margin-top: 82%;
+        left: -25%;
+        width: 25%;
+    }
 }
 
 /* ----------- iPads (вертикальная) ----------- */
