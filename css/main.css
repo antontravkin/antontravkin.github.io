@@ -387,7 +387,7 @@ span {
 }
 
 /* ------------ iPhone 4 (вертикальная) ----------- */
-@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-width: 319px) and (max-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
     .header__position {
         margin-top: 15%;
         margin-left: 0;
