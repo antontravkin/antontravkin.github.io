@@ -22,6 +22,10 @@ h3 {
     font-family: 'Marck Script', cursive;
 }
 
+h6 {
+    font-weight: 700;
+}
+
 section h2 {
     font-family: 'Marck Script', cursive;
 }
@@ -372,6 +376,14 @@ span {
     background-color: black;
 }
 
+.picture {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 200px;
+    border: 1px black solid;
+}
+
 
 
 @media screen and (max-width: 576px) {
@@ -425,6 +437,8 @@ span {
         margin: 0 auto;
     }
 }
+
+
 
 /* ----------- iPads (вертикальная) ----------- */
 @media only screen and (min-width: 767px) and (max-width: 1024px) and (orientation: portrait) {
