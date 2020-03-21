@@ -23,6 +23,7 @@ h3 {
 }
 
 h6 {
+    text-align: center;
     font-weight: 700;
 }
 
@@ -36,6 +37,10 @@ span {
     font-size: 2.2em;
 }
 
+p {
+    text-indent: 1em;
+    text-align: justify;
+}
 
 .preloader {
     position: fixed;
@@ -481,10 +486,15 @@ span {
 
 }
 
+.p-h {
+    min-height: 86px;
+}
+
 .video {
     width: 298px;
-    height: 168px;
+    height: 167px;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .black {
@@ -501,6 +511,15 @@ span {
     border: 1px rgb(116, 116, 116) solid;
     border-radius: 10px;
     overflow: hidden;
+}
+
+.bg3 {
+    background-image: url(/img/tel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 1000px;
 }
 
 
@@ -554,6 +573,7 @@ span {
         width: 224px;
         height: 126px;
         margin: 0 auto;
+        margin-bottom: 14px;
     }
 }
 
