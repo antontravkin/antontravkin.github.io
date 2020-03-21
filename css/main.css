@@ -40,6 +40,10 @@ span {
 p {
     text-indent: 1em;
     text-align: justify;
+    hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
 }
 
 .preloader {
