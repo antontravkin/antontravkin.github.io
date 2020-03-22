@@ -25,7 +25,7 @@
     </div>
     <header id="header" class="header">
         <div class="bg">
-            <div class="tower"></div>
+            <div id="tower" class="tower"></div>
             <div class="cloud"><img class="cloud__item" src="/img/cloud.png" alt=""><img class="cloud__item1"
                     src="/img/cloud.png" alt=""><img class="cloud__item2" src="/img/cloud.png" alt=""></div>
             <div class="container">
@@ -148,7 +148,7 @@
         <div class="container indian">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2><span>Т</span>технические данные вашей сказки:</h2>
+                    <h2><span>Т</span>технические данные вашей сказки</h2>
                 </div>
             </div>
             <div class="row">
@@ -167,7 +167,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3><span>С</span>тиль:</h3>
+                    <h3><span>С</span>тиль</h3>
                 </div>
                 <div class="col-lg-4">
                     <h6>Шаржевый</h6>
@@ -239,14 +239,14 @@
                 </div>
             </div>
         </div>
-
-    </section>
-    <section id="final" class="final">
         <div class="interval"></div>
-        <div class="container indian">
+    </section>
+    <section id="final" class="final bg2">
+        <div class="interval"></div>
+        <div class="container indian ">
             <div class="bg3">
-                <div class="row">
-                    <div class="offset-lg-3 col-lg-6" style="margin-top: 300px;">
+                <div class="row h-100">
+                    <div class="offset-lg-3 col-lg-6 align-self-center">
                         <p>
                             Жил да был человек.
                             Дарил скучные подарки, снимал на свадьбы одинаковые love stories,
@@ -281,8 +281,18 @@
         <div class="interval"></div>
         <div class="container">
             <div class="row">
+                <div class="offset-lg-3 col-lg-6 text-center">
+                    <form id="mailForm">
+                        <input type="text" id="name" name="name" class="form-control"><br>
+                        <input type="phone" id="phone" name="phone" class="form-control"><br>
+                        <button type="button" id="sendMail" class="btn btn-outline-danger">Отпаравить</button><br>
+                    </form>
+                    <div id="errorMess">
+
+                    </div>
+                </div>
                 <div class="col-lg-12 text-center">
-                    <span style="font-size: 28px;" data-redactor-style="font-size: 28px;">+7(920)948-80-71 </span>
+                    <span style="font-size: 28px;" data-redactor-style="font-size: 28px;">+7(920)948-80-71</span>
                 </div>
             </div>
         </div>
@@ -306,8 +316,8 @@
                 <div class="col-lg-6">
                     <p>© 2020 сказочная мастерская «ShatoBarto»</p>
                 </div>
-                <div class="col-lg-6 text-right">
-                    <p>+7(920)948-80-71</p>
+                <div class="col-lg-6 ">
+                    <p class="text-right">+7(920)948-80-71</p>
                 </div>
             </div>
         </div>
@@ -315,6 +325,8 @@
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/loader.js"></script>
     <script src="/js/nav.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/formMail.js"></script>
 
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">-->
