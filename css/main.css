@@ -265,8 +265,8 @@ p {
 
 .indian {
     border: 28px solid transparent;
-    border-image: url(/img/border.png) 145 round;
-    -webkit-border-image: url(/img/border.png) 204 repeat;
+    border-image: url(/img/border.jpf) 145 round;
+    -webkit-border-image: url(/img/border.jpf) 204 repeat;
 
 }
 
