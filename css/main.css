@@ -180,7 +180,7 @@ p {
 }
 
 .tower {
-    background: url(/img/bg.jpf) no-repeat;
+    background: url(/img/bg.png) no-repeat;
     background-position: right top;
     background-size: cover;
     height: 100vh;
