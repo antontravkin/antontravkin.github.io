@@ -1,22 +1,28 @@
 $('#sendMail').on('click', function () {
     var name = $('#name').val().trim();
     var phone = $('#phone').val().trim();
+    var massege = $('#massege').val().trim();
     if (name == "") {
         $('#errorMess').text('введите имя');
         return false;
-    } else if (phone == "" && phone.lenght < 10) {
+    } else if (phone == "") {
         $('#errorMess').text('введите телефон');
+        return false;
+    } else if (!($("#agree").prop("checked"))) {
+        $('#errorMess').text('Дайте свое согласие на обработку данных!');
+        $("#agree").css('border', '1px solid red');
         return false;
     }
     $('#errorMess').text("");
 
     $.ajax({
-        url: 'ajax/mail.php',
+        url: '/ajax/mail.php',
         type: 'POST',
         cache: false,
         data: {
             'name': name,
-            'phone': phone
+            'phone': phone,
+            'massege': massege,
         },
         dataType: 'html',
         beforeSend: function () {
@@ -27,9 +33,10 @@ $('#sendMail').on('click', function () {
                 alert("error");
 
             } else {
-                $('#mailForm').trigger('reset');
+                $('#mailForm').trigger("reset");
+                alert("Отправлено");
             }
-            alert(data);
+
             $('#sendMail').prop("disabled", false);
         }
     })

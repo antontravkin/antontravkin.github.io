@@ -282,9 +282,18 @@
         <div class="container">
             <div class="row">
                 <div class="offset-lg-3 col-lg-6 text-center">
+                    <h2>Дарите сказки!</h2>
+                    <p class="text-centr">Заполните скрижали волшебные и мы вам перезвоним</p>
                     <form id="mailForm">
-                        <input type="text" id="name" name="name" class="form-control"><br>
-                        <input type="phone" id="phone" name="phone" class="form-control"><br>
+                        <input type="text" id="name" name="name" placeholder="Имя" class="form-control"><br>
+                        <input type="tel" id="phone" name="phone" placeholder="+7(xxx)-xxx-xx-xx"
+                            class="form-control"><br>
+                        <textarea name="massege" id="massege" placeholder="Сообщение"
+                            class="form-control"></textarea><br>
+                        <p>
+                            <input id="agree" type="checkbox" name="privacy">
+                            <a href="/privacy.html" target="_blank">Я согласен на обработку персональных данных</a>
+                        </p>
                         <button type="button" id="sendMail" class="btn btn-outline-danger">Отпаравить</button><br>
                     </form>
                     <div id="errorMess">
@@ -296,9 +305,6 @@
                 </div>
             </div>
         </div>
-
-
-
     </section>
 
     <footer id="footer" class="footer">
