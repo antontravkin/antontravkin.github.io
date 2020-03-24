@@ -154,12 +154,50 @@ p {
 }
 
 .video {
-    width: 298px;
-    height: 167px;
+    width: 300px;
+    height: 158px;
     margin: 0 auto;
     margin-bottom: 20px;
 }
 
+/*------------------- youtube -----------------------*/
+.youtube {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: all 500ms ease-out;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.youtube .play {
+    background: url('/img/icon_youtube.svg') no-repeat;
+    /*ВАЖНО: здесь укажите адрес до изображения кнопки play*/
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    transition: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.youtube .play:hover {
+    background: url('/img/icon_youtube_gray.svg') no-repeat;
+}
+
+.youtube:hover .play {
+    background-position: 0 0;
+}
+
+/*------------------- youtube end-----------------------*/
 .black {
     width: 100%;
     height: 100%;
