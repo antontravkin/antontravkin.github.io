@@ -162,6 +162,8 @@ p {
 
 /*------------------- youtube -----------------------*/
 .youtube {
+    width: 300px;
+    height: 158px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -277,6 +279,11 @@ p {
         height: 126px;
         margin: 0 auto;
         margin-bottom: 14px;
+    }
+
+    .youtube {
+        width: 224px;
+        height: 126px;
     }
 }
 
