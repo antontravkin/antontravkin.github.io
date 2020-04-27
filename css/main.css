@@ -46,6 +46,10 @@ p {
     -ms-hyphens: auto;
 }
 
+video {
+    border-radius: 10px;
+}
+
 .done {
     opacity: 0;
     visibility: hidden;
@@ -210,9 +214,20 @@ p {
     display: block;
     margin: 0 auto;
     width: 300px;
-    height: 392px;
+    height: 300px;
     border: 1px rgba(116, 116, 116, 0.15) solid;
-    border-radius: 3px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.picture2 {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 412px;
+    border: 1px rgba(116, 116, 116, 0.15) solid;
+    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -226,6 +241,10 @@ p {
 }
 
 @media screen and (max-width: 576px) {
+    video {
+        max-width: 224px;
+    }
+
     body {
         font-size: 11px;
     }
@@ -243,8 +262,40 @@ p {
     }
 }
 
+/* ------------ iPhone 5 (горизонт) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 776px) and (orientation : landscape) {
+    video {
+        max-width: 400px;
+    }
+}
+
+/* ------------ iPhone 7 (горизонт) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+    video {
+        max-width: 400px;
+    }
+}
+
+
+@media only screen and (min-width: 319px) and (max-width: 480px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2) {}
+
 /* ------------ iPhone 4 (вертикальная) ----------- */
 @media only screen and (min-width: 319px) and (max-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    video {
+        max-width: 224px;
+    }
+
+    .picture {
+        max-width: 224px;
+        height: 224px;
+
+    }
+
+    .picture2 {
+        width: 224px;
+        height: auto;
+    }
+
     .h2 {
         font-size: 2em;
     }
