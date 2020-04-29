@@ -275,6 +275,41 @@ iframe {
     height: 50px;
 }
 
+.social {
+    font-size: 2rem;
+    margin-top: -10px;
+}
+
+
+.soc:hover {
+    color: rgb(214, 212, 212);
+}
+
+
+.instagram {
+    color: white;
+    width: 31px;
+    height: 31px;
+    border-radius: 8px;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.instagram:hover {
+    color: rgb(214, 212, 212);
+}
+
+.text-red {
+    color: rgb(199, 55, 55);
+}
+
+.text-red:hover {
+    color: rgb(158, 42, 42);
+}
+
 @media screen and (max-width: 576px) {
     video {
         max-width: max-content;
@@ -299,6 +334,11 @@ iframe {
 
 /* ------------ iPhone 5 (горизонт) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 776px) and (orientation : landscape) {
+
+    .title__tr {
+        font-size: 0.9rem;
+    }
+
     video {
         max-width: 400px;
     }
@@ -306,6 +346,23 @@ iframe {
 
 /* ------------ iPhone 7 (горизонт) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+
+    .title__tr {
+        font-size: 0.9rem;
+    }
+
+    video {
+        max-width: 400px;
+    }
+
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (orientation : landscape) {
+
+    .title__tr {
+        font-size: 1.3rem;
+    }
+
     video {
         max-width: 400px;
     }
@@ -317,6 +374,10 @@ iframe {
 
 /* ------------ iPhone 4 (вертикальная) ----------- */
 @media only screen and (min-width: 319px) and (max-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .title__tr {
+        font-size: 1rem;
+    }
+
     video {
         max-width: 224px;
     }
