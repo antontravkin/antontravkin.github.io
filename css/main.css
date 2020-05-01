@@ -173,6 +173,7 @@ iframe {
     border: 28px solid transparent;
     border-image: url(/img/border.png) 145 round;
     -webkit-border-image: url(/img/border.png) 204 repeat;
+
 }
 
 .p-h {
@@ -246,11 +247,22 @@ iframe {
 .picture2 {
     display: block;
     margin: 0 auto;
-    width: 300px;
-    height: 412px;
     border: 1px rgba(116, 116, 116, 0.15) solid;
     border-radius: 10px;
     overflow: hidden;
+}
+
+.ava {
+    margin: 16px;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.format_text {
+    height: 2rem;
 }
 
 .bg5 {
@@ -274,7 +286,10 @@ iframe {
 
 
 .footer {
-    background-color: rgb(223, 223, 223);
+    background: linear-gradient(331deg,
+            rgb(215, 250, 232) 42%,
+            rgb(242, 253, 243) 100%);
+    ;
 }
 
 .logo_page {
@@ -321,6 +336,12 @@ iframe {
     color: rgb(158, 42, 42);
 }
 
+.final_img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
 @media screen and (max-width: 576px) {
     video {
         max-width: max-content;
@@ -349,10 +370,6 @@ iframe {
     .title__tr {
         font-size: 0.9rem;
     }
-
-    video {
-        max-width: 400px;
-    }
 }
 
 /* ------------ iPhone 7 (горизонт) ----------- */
@@ -361,11 +378,6 @@ iframe {
     .title__tr {
         font-size: 0.9rem;
     }
-
-    video {
-        max-width: 400px;
-    }
-
 }
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (orientation : landscape) {
@@ -373,11 +385,6 @@ iframe {
     .title__tr {
         font-size: 1.3rem;
     }
-
-    video {
-        max-width: 400px;
-    }
-
 }
 
 
@@ -389,12 +396,8 @@ iframe {
         font-size: 1rem;
     }
 
-    video {
-        max-width: 224px;
-    }
-
     .picture {
-        max-width: 224px;
+        max-width: 100%;
         height: 224px;
 
     }
