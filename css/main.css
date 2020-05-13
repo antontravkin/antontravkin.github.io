@@ -238,8 +238,7 @@ iframe {
     margin: 0 auto;
     width: 300px;
     height: 300px;
-    border: 1px rgba(116, 116, 116, 0.15) solid;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
 
 }
