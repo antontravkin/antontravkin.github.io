@@ -1,0 +1,74 @@
+html body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.bg {
+    background-image: url(/img/Zolotvorot.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1366px;
+    height: 768px;
+    position: absolute;
+    margin-top: 20px;
+}
+
+.coloring {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.coloring-toolbox {
+    flex: 1 1 0;
+}
+
+.palette {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.palette-button {
+    width: 16px;
+    height: 16px;
+    margin: 5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+
+}
+
+.palette-button-active {
+    border-color: rgb(253, 253, 253);
+}
+
+.coloring-image {
+    flex: 3 1 0;
+    width: 500px;
+    height: auto;
+    border: 5px dashed rgb(247, 115, 115);
+    z-index: 9999;
+    position: relative;
+    background-image: url(/img/Zolotvorot.jpg);
+    background-size: contain;
+}
+
+.coloring-image>svg {
+    max-width: 100%;
+
+}
+
+
+
+.selected {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+path {
+
+    stroke-linejoin: round;
+}
+
+.coloring {
+    color: rgba(0, 128, 128, 0);
+}
