@@ -1,5 +1,5 @@
 const colors = ['#ff000000', '#ffa500', '#ffff00', '#008000',
-    '#0000ff', '#00008b', '#800080', '#f40000'
+    '#0000ff', '#00008b', '#800080', '#f70a0a59'
 ];
 
 function renderColorPalette() {
