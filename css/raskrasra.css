@@ -34,7 +34,7 @@ html body {
     margin: 5px;
     border: 2px solid transparent;
     cursor: pointer;
-
+    border: black solid 1px;
 }
 
 .palette-button-active {
