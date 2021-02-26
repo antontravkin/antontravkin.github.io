@@ -1,1 +1,1 @@
-# Web site "Shatobarto.ru"
+# Web site
