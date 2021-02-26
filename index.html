@@ -463,30 +463,42 @@
 			</div><!-- .row -->
 
 			<div class="row">
+				<form action="https://formspree.io/f/mleoygpz" method="POST">
+					<label>
+						Your email:
+						<input type="text" name="_replyto">
+					</label>
+					<label>
+						Your message:
+						<textarea name="message"></textarea>
+					</label>
 
+					<!-- your other form fields go here -->
+
+					<button type="submit">Send</button>
+				</form>
 				<div class="col-sm-6 col-sm-offset-3">
-					<form role="form" action="http://formspree.io/travkin.rh@gmail.com">
-						<div class="ajax-hidden">
-							<div class="form-group wow fadeInUp">
-								<label class="sr-only" for="c_name">Имя</label>
-								<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
-							</div>
-
-							<div class="form-group wow fadeInUp" data-wow-delay=".1s">
-								<label class="sr-only" for="c_email">Email</label>
-								<input type="email" class="form-control" name="_replyto" placeholder="E-mail">
-							</div>
-
-							<div class="form-group wow fadeInUp" data-wow-delay=".2s">
-								<textarea class="form-control" id="c_message" name="body" rows="7"
-									placeholder="Message"></textarea>
-							</div>
-
-							<button type="submit" class="btn btn-lg btn-block wow fadeInUp" value="Send"
-								data-wow-delay=".3s">Отправить
-								сообщение</button>
+					<form role="form" action="http://formspree.io/travkin.rh@gmail.com"></form> method="POST">
+					<div class="ajax-hidden">
+						<div class="form-group wow fadeInUp">
+							<label class="sr-only" for="c_name">Имя</label>
+							<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
 						</div>
-						<div class="ajax-response"></div>
+
+						<div class="form-group wow fadeInUp" data-wow-delay=".1s">
+							<label class="sr-only">Email</label>
+							<input type="trxt" class="form-control" name="_replyto" placeholder="E-mail">
+						</div>
+
+						<div class="form-group wow fadeInUp" data-wow-delay=".2s">
+							<textarea class="form-control" name="message" rows="7" placeholder="Message"></textarea>
+						</div>
+
+						<button type="submit" class="btn btn-lg btn-block wow fadeInUp" value="Send"
+							data-wow-delay=".3s">Отправить
+							сообщение</button>
+					</div>
+					<div class="ajax-response"></div>
 					</form>
 
 				</div>
