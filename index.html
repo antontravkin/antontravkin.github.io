@@ -2,221 +2,561 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content='💻 Веб-разработчик, создаю сайты "под ключ"!'>
+	<meta name="author" content="Антон Травкин">
 
-    <link rel="stylesheet" href="/css/main.css">
-    <title>web-разработчик</title>
+	<title>Антон Т. | ВЕБ-РАЗРАБОТЧИК</title>
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<!-- CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
+	<link href="assets/css/animate.css" rel="stylesheet">
+
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+
+	<script src="assets/js/modernizr.custom.js"></script>
+
 </head>
 
 <body>
-    <header class="header">
-        <h1 id="header_title" class="center">
-            web-разработчик
-        </h1>
-        <div class="center" id="showScroll"></div>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Главная</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Обо мне</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Портфолио
-                            </a>
-                            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" style="color: gray;" href="#">Интернет магазин</a></li>
-                                <li><a class="dropdown-item" style="color: gray;" href="#">Визитка</a></li>
-                                <li><a class="dropdown-item" style="color: gray;" href="#">Web-игра</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Контакты</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <section style="background-color: rgb(20, 20, 20);">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center m-5">
-                    <h2>Обо мне</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 ">
-                    <h4 class="text-center mb-4">Немного о себе</h4>
-                    <p>
-                        Меня зовут Антон
-                        Я занимаюсь web-разработкой с нуля,под ключ.
-                        Выполняю верстку и программирование сайтов,а так же доработку,добавляя полный функционал на
-                        сайт!Верстаю адаптивную верстку с помощью Bootstrap,
-                        таким образом сайт получается красивым на любом устройстве,будь то комьютер,ноутбук или телефон!
-                    </p>
-                </div>
+
+	<!-- Preloader -->
+
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+
+	<!-- Home start -->
+
+	<section id="home" class="pfblock-image screen-height">
+		<div class="home-overlay"></div>
+		<div class="intro">
+			<div class="start">Здравствуйте, меня завут Антон и я</div>
+			<h1>Веб-разработчик</h1>
+			<div class="start">специалист по cсозданию современного веб-приложения</div>
+		</div>
+
+		<a href="#services">
+			<div class="scroll-down">
+				<span>
+					<i class="fa fa-angle-down fa-2x"></i>
+				</span>
+			</div>
+		</a>
+
+	</section>
+
+	<!-- Home end -->
+
+	<!-- Navigation start -->
+
+	<header class="header">
+
+		<nav class="navbar navbar-custom" role="navigation">
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Антон</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Главная</a></li>
+						<li><a href="#services">Услуги</a></li>
+						<li><a href="#portfolio">Портфолио</a></li>
+						<li><a href="#skills">Навыки</a></li>
+						<li><a href="#testimonials">Отзывы</a></li>
+						<li><a href="#contact">Контакты</a></li>
+					</ul>
+				</div>
+
+			</div><!-- .container -->
+
+		</nav>
+
+	</header>
+
+	<!-- Navigation end -->
+
+	<!-- Services start -->
+
+	<section id="services" class="pfblock pfblock-gray">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">ВОТ ЧТО Я ДЕЛАЮ</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							Я занимаюсь разработкой web-проектов «под ключ» на
+							платформе «Wordpress» - профессиональная система управления веб-проектами, универсальный
+							программный продукт для создания, поддержки и успешного развития вашего сайта.
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-sm-3">
+
+					<div class="iconbox wow slideInLeft">
+						<div class="iconbox-icon">
+							<span class="icon-magic-wand"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">ВЕБ-ДИЗАЙН</h3>
+							<div class="iconbox-desc">
+								Проектирую дизайн сайтов, которые отвечают потребностям пользователей и требованиям
+								заказчика.
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-3">
+
+					<div class="iconbox wow slideInLeft">
+						<div class="iconbox-icon">
+							<span class="icon-puzzle"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">ВЕБ-ПРОГРАММИРОВАНИЕ</h3>
+							<div class="iconbox-desc">
+								Разрабатываю сайты, которые имеют функуионал для решения различных задач.
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-3">
+
+					<div class="iconbox wow slideInRight">
+						<div class="iconbox-icon">
+							<span class="icon-badge"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">SEO</h3>
+							<div class="iconbox-desc">
+								Оптимизирую сайты для поднятия позиций в результатах выдачи поисковых систем.
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-3">
+
+					<div class="iconbox wow slideInRight">
+						<div class="iconbox-icon">
+							<span class="icon-question"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Поддержка</h3>
+							<div class="iconbox-desc">
+								Консультирую клиентов по работе с созданными сервисами.
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- Services end -->
+
+	<!-- Portfolio start -->
+
+	<section id="portfolio" class="pfblock">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">МОИ РАБОТЫ</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
 
 
-                <div class="col-lg-4">
-                    <h4 class="text-center mb-4">Знания и Умения</h4>
+			<div class="row">
 
-                    <p>
-                        Знаю такие языки программирования,как:PHP , JavaScript.Языки разметки: HTML(5), таблицы стилей
-                        CSS(3).
-                        Умею верстать адаптивные сайты под планшеты и мобильные устройства, фраемворк Bootstrap. Также
-                        знаю
-                        библиотеку jQuery!
-                    </p>
-                </div>
-                <div class="col-lg-4">
-                    <h4 class="text-center mb-4">Самообразование</h4>
-                    <p>
-                        Курсы в интернете, видеокурсы, книги, документация, форумы, статьи.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center m-5">
-                    <h2>Профессиональные навыки</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3">
-                    HTML5|CSS3
-                </div>
-                <div class="col-lg-3">
-                    jQuery|JavaScript
-                </div>
-                <div class="col-lg-3">
-                    PHP|MySQL
-                </div>
-                <div class="col-lg-3">
-                    Photoshop
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center m-5">
-                    <h2>Партфолио</h2>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section style="background-color: rgb(20, 20, 20);">
-        <div class="container">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="assets/images/item-1.jpg" alt="img01" />
+							<figcaption>
+								<h2>Shato<span>Barto</span></h2>
+								<p>Ландинг</p>
+							</figcaption>
+						</figure>
+					</div>
+
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-4">
+
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="assets/images/item-2.jpg" alt="img01" />
+							<figcaption>
+								<h2>Кристалл <span>Истории</span></h2>
+								<p>web-раскраска для детей</p>
+							</figcaption>
+						</figure>
+					</div>
+
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-4">
+
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="assets/images/item-3.jpg" alt="img01" />
+							<figcaption>
+								<h2>Аn<span>dors</span></h2>
+								<p>Интернет-магазин</p>
+							</figcaption>
+						</figure>
+					</div>
+
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-4">
+
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="assets/images/item-4.jpg" alt="img01" />
+							<figcaption>
+								<h2>Чешская <span>посуда</span></h2>
+								<p>Интернет-магазин</p>
+							</figcaption>
+						</figure>
+					</div>
+
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-4">
+
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="assets/images/item-5.jpg" alt="img01" />
+							<figcaption>
+								<h2>Crypton <span>Dude</span></h2>
+								<p>Lily likes to play with crayons and pencils</p>
+							</figcaption>
+						</figure>
+					</div>
+
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-4">
+
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="assets/images/item-6.jpg" alt="img01" />
+							<figcaption>
+								<h2>Don't <span>Poke</span></h2>
+								<p>Lily likes to play with crayons and pencils</p>
+							</figcaption>
+						</figure>
+					</div>
+
+				</div>
+
+			</div>
 
 
-            <div class="row">
-                <div class="col-lg-12 text-center m-5">
-                    <h2>Контакты</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="text-center">
-                        Если у вас есть вопросы, я с радостью отвечу на них!
-                        Для этого свяжитесь со мной удобным для вас способом и я отвечу Вам в ближайшее время!
-                    </p>
+		</div><!-- .contaier -->
 
-                </div>
+	</section>
 
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <i class="fa fa-envelope-o" aria-hidden="true" style="font-size: 3.5rem;"></i>
-                            <h6>E-MAIL:</h6>
-                            <p><a href="mailto:travkin.rh@gmail.com">travkin.rh@gmail.com</a></p>
-                        </div>
-                        <div class="col-lg-6">
-                            <i class="fa fa-laptop" aria-hidden="true" style="font-size: 3.5rem;"></i>
-                            <h6>WEB-САЙТ:</h6>
-                            <a href="https://antontravkin.github.io">antontravkin.github.io</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <i class="fa fa-vk" aria-hidden="true" style="font-size: 3.5rem;"></i>
-                            <h6>ВКОНТАКТЕ:</h6>
-                            <a href="https://vk.com/travkin_anton" target="_blank" rel="noopener noreferrer">Антон
-                                Травкин</a>
-                        </div>
-                        <div class="col-lg-6">
-                            <i class="fa fa-telegram" aria-hidden="true" style="font-size: 3.5rem;"></i>
-                            <h6>ТЕЛЕГРАМ:</h6>
-                            <a href="https://telegram.im/@travkin_anton" target="_blank">Telegram</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <p>Так же Вы можете написать свое сообщения прямо здесь!
-                        Вам необходио заполнить все поля!</p>
-                    <form method="post" action="https://formspree.io/travkin.rh@gmail.com">
-                        <p>
-                            Ваше имя:
-                            <br>
-                            <input type="text" size="34" required name="your_name" placeholder="Ваше имя"
-                                style="border-radius: 3px; border: none; padding: 5px;">
-                        </p>
-                        <p>
-                            Ваш E-mail:
-                            <br>
-                            <input type="email" size="34" required name="email" placeholder="example@mail.com"
-                                style="border-radius: 3px; border: none; padding: 5px;">
-                        </p>
-                        <p>
-                            Ваше сообщение:
-                            <br>
-                            <textarea type="text" name="comment" cols="32" rows="5" name="messages"
-                                placeholder="Ваше сообщение"
-                                style="border-radius: 3px; border: none; padding: 5px;"></textarea>
-                        </p>
-                        <p>
-                            <input type="submit" value="Send" class="btn btn-outline-secondary">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer style="background-color: #212529!important">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-lg-6">
-                    <p></p>
-                </div>
-            </div>
-            <div class="col-lg-6 pt-1 pb-1">
-                <p>© 2021 Травкин Антон. Профессиональное создание сайтов</p>
-            </div>
-        </div>
-    </footer>
+	<!-- Portfolio end -->
+
+	<!-- Skills start -->
+
+	<section class="pfblock pfblock-gray" id="skills">
+
+		<div class="container">
+
+			<div class="row skills">
+
+				<div class="row">
+
+					<div class="col-sm-6 col-sm-offset-3">
+
+						<div class="pfblock-header wow fadeInUp">
+							<h2 class="pfblock-title">МОИ НАВЫКИ</h2>
+							<div class="pfblock-line"></div>
+							<div class="pfblock-subtitle">
+								Для повышения профессионализма изучаю техническую документацию, прохожу курсы и
+								обмениваясь опытом с коллегами.
+							</div>
+						</div>
+
+					</div>
+
+				</div><!-- .row -->
+
+				<div class="col-sm-6 col-md-3 text-center">
+					<span data-percent="80" class="chart easyPieChart"
+						style="width: 140px; height: 140px; line-height: 140px;">
+						<span class="percent">90</span>
+					</span>
+					<h3 class="text-center">ПРОГРАММИРОВАНИЕ</h3>
+				</div>
+				<div class="col-sm-6 col-md-3 text-center">
+					<span data-percent="90" class="chart easyPieChart"
+						style="width: 140px; height: 140px; line-height: 140px;">
+						<span class="percent">75</span>
+					</span>
+					<h3 class="text-center">ДИЗАЙН</h3>
+				</div>
+				<div class="col-sm-6 col-md-3 text-center">
+					<span data-percent="85" class="chart easyPieChart"
+						style="width: 140px; height: 140px; line-height: 140px;">
+						<span class="percent">85</span>
+					</span>
+					<h3 class="text-center">МАРКЕТИНГ</h3>
+				</div>
+				<div class="col-sm-6 col-md-3 text-center">
+					<span data-percent="95" class="chart easyPieChart"
+						style="width: 140px; height: 140px; line-height: 140px;">
+						<span class="percent">95</span>
+					</span>
+					<h3 class="text-center">UI / UX</h3>
+				</div>
+
+			</div>
+			<!--End row -->
+
+		</div>
+
+	</section>
+
+	<!-- Skills end -->
+
+	<!-- CallToAction start -->
+
+	<section class="calltoaction">
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-12 col-lg-12">
+					<h2 class="wow slideInRight" data-wow-delay=".1s">ВЫ ГОТОВЫ НАЧАТЬ?</h2>
+					<div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s">
+						Я доступен для внештатных проектов.
+					</div>
+				</div>
+
+				<div class="col-md-12 col-lg-12 calltoaction-btn wow slideInRight" data-wow-delay=".3s">
+					<a href="#contact" class="btn btn-lg">нажми меня</a>
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- CallToAction end -->
+
+	<!-- Testimonials start -->
+
+	<section id="testimonials" class="pfblock pfblock-gray">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">ЧТО ГОВОРЯТ МОИ КЛИЕНТЫ</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+
+			<div class="row">
+
+				<div id="cbp-qtrotator" class="cbp-qtrotator">
+					<div class="cbp-qtcontent">
+						<img src="assets/images/client-1.jpg" alt="client-1" />
+						<blockquote>
+							<p>Работать с Джоном было одно удовольствие. Он точно понял, что я хочу, и создал отличный
+								сайт для моей компании.</p>
+							<footer>Анатолий</footer>
+						</blockquote>
+					</div>
+					<div class="cbp-qtcontent">
+						<img src="assets/images/client-2.jpg" alt="client-2" />
+						<blockquote>
+							<p>Я очень доволена результатами. Получить 100% удовлетворение сложно, но я получила это
+								без проблем.</p>
+							<footer>Анастасия</footer>
+						</blockquote>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+
+
+		</div><!-- .row -->
+	</section>
+
+	<!-- Testimonial end -->
+
+
+	<!-- Contact start -->
+
+	<section id="contact" class="pfblock">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header">
+						<h2 class="pfblock-title">сообщение</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							Здесь можно написать мне сообщение с вопросом или предложением
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<form id="contact-form" role="form">
+						<div class="ajax-hidden">
+							<div class="form-group wow fadeInUp">
+								<label class="sr-only" for="c_name">Имя</label>
+								<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
+							</div>
+
+							<div class="form-group wow fadeInUp" data-wow-delay=".1s">
+								<label class="sr-only" for="c_email">Email</label>
+								<input type="email" id="c_email" class="form-control" name="c_email"
+									placeholder="E-mail">
+							</div>
+
+							<div class="form-group wow fadeInUp" data-wow-delay=".2s">
+								<textarea class="form-control" id="c_message" name="c_message" rows="7"
+									placeholder="Message"></textarea>
+							</div>
+
+							<button type="submit" class="btn btn-lg btn-block wow fadeInUp"
+								data-wow-delay=".3s">Отправить
+								сообщение</button>
+						</div>
+						<div class="ajax-response"></div>
+					</form>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- Contact end -->
+
+	<!-- Footer start -->
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-12">
+
+					<ul class="social-links">
+						<li><a href="https://www.facebook.com/anton.travkin.902" class="wow fadeInUp"><i
+									class="fa fa-facebook"></i></a></li>
+						<li><a href="https://vk.com/travkin_anton" class="wow fadeInUp" data-wow-delay=".1s"><i
+									class="fa fa-vk" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.instagram.com/anton_travkin/" class=" wow fadeInUp"
+								data-wow-delay=".2s"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://wa.me/79268640404?text=Я%20хочу%20оставить%20заявку" class="wow fadeInUp"
+								data-wow-delay=".4s"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+						<li><a href="mailto:travki,rh@hgmail.com" class="wow fadeInUp" data-wow-delay=".5s"><i
+									class="fa fa-envelope"></i></a></li>
+					</ul>
+
+					<p class="heart">
+						Сделано с <span class="fa fa-heart fa-2x animated pulse"></span>
+					</p>
+					<p class="copyright">
+						© 2021 Антон Травкин
+					</p>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</footer>
+
+	<!-- Footer end -->
+
+	<!-- Scroll to top -->
+
+	<div class="scroll-up">
+		<a href="#home"><i class="fa fa-angle-up"></i></a>
+	</div>
+
+	<!-- Scroll to top end-->
+
+	<!-- Javascript files -->
+
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.parallax-1.1.3.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.js"></script>
+	<script src="assets/js/jquery.sticky.js"></script>
+	<script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/jquery.easypiechart.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/jquery.cbpQTRotator.js"></script>
+	<script src="assets/js/custom.js"></script>
+
 </body>
-<script src="/js/jquery-3.3.1.min.js"></script>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-</script>
-<script src="https://use.fontawesome.com/2ffd00e8a2.js"></script>
-<script src="/js/main.js"></script>
 
 </html>
