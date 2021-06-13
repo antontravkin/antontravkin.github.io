@@ -274,6 +274,7 @@ textarea.form-control {
 	font-family: Raleway, "Times New Roman", Times, sans-serif;
 	font-style: normal;
 	font-size: 18px;
+	margin: 0 15px;
 }
 
 .pfblock-line {
@@ -378,6 +379,7 @@ textarea.form-control {
 
 .intro h1{
     font-weight: 800;
+	font-size: 10rem;
 }
 
 .start {
@@ -690,8 +692,8 @@ textarea.form-control {
 
 @media (max-width: 480px) {
 
-	h1 {
-		font-size: 34px;
+	.intro h1 {
+		font-size: 9rem;
 		letter-spacing: 3px;
 	}
 
@@ -968,4 +970,17 @@ figure.effect-bubba:hover p {
 
 .d-none{
 	display: none;
+}
+
+.mb-0{
+	margin-bottom: 0;
+}
+.mb-1{
+	margin-bottom: 1rem;
+}
+.services_title{
+	letter-spacing: .75rem;
+}
+.services_item{
+	letter-spacing: .07rem;
 }
