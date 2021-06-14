@@ -28,7 +28,7 @@ if (form) {
     alert(json); //создаем соединение
 
     var formReq = new XMLHttpRequest();
-    formReq.open('POST', '../telegram', true); ///////////////////////////////////
+    formReq.open('POST', 'https://antontravkin.github.io/telegram.json', true); ///////////////////////////////////
     /////////////SweetAlert//////////
     ///////////////////////////////////
     //обрабатываем ответ сервера

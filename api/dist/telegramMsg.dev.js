@@ -38,3 +38,4 @@ module.exports.sendMsg = function (req, res) {
     }
   });
 };
+//# sourceMappingURL=telegramMsg.dev.js.map

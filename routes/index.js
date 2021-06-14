@@ -1,2 +1,2 @@
 const ctrlTelegram = require('../api/telegramMsg');
-router.post('../telegram', ctrlTelegram.sendMsg);
+router.post('../telegram,json', ctrlTelegram.sendMsg);

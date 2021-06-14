@@ -2,5 +2,5 @@
 
 var ctrlTelegram = require('../api/telegramMsg');
 
-router.post('../telegram', ctrlTelegram.sendMsg);
+router.post('../telegram,json', ctrlTelegram.sendMsg);
 //# sourceMappingURL=index.dev.js.map
