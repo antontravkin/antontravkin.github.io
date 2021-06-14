@@ -51,6 +51,6 @@ if (form) {
     ////////////////////////////
     formReq.setRequestHeader('Content-Type', 'application/json')
     //отправляем
-    formReq.send(json)
+    formReq.send(json);
   })
 }
