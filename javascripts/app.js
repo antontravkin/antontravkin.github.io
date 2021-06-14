@@ -4,6 +4,7 @@ const form = document.getElementById(formId);
 function toJSONString(form) {
   var obj = {};
   var elements = form.querySelectorAll('input, select, textarea');
+  console.log(element);
   for (var i = 0; i < elements.length; ++i) {
     var element = elements[i];
     var name = element.name;
@@ -53,6 +54,6 @@ if (form) {
     ////////////////////////////
     formReq.setRequestHeader('Content-Type', 'application/json');
     //отправляем
-    formReq.send('json');
+    formReq.send(json);
   })
 }
