@@ -45,7 +45,7 @@ if (form) {
     }
     ////////////////////////////
     ////////////////////////////
-    formReq.setRequestHeader('Content-Type', 'application/json')
-    formReq.send(json)
+    formReq.setRequestHeader('Content-Type', 'application/json');
+    formReq.send(JSON);
   })
 }
