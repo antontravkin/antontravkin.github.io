@@ -43,6 +43,8 @@ if (form) {
         document.querySelector('.sa-button-container').style.opacity = '0';
       }
 
+      alert(formReq.status);
+
       if (formReq.status !== 200) {
         swal({
           title: 'Произошла ошибка!',

@@ -1,27 +1,27 @@
-const formId = 'telegramForm'
-const form = document.getElementById(formId)
+const formId = 'telegramForm';
+const form = document.getElementById(formId);
 //функция для захвата данных из тегов формы и синтеза JSON-обьекта 
 function toJSONString(form) {
-  var obj = {}
-  var elements = form.querySelectorAll('input, select, textarea')
+  var obj = {};
+  var elements = form.querySelectorAll('input, select, textarea');
   for (var i = 0; i < elements.length; ++i) {
-    var element = elements[i]
-    var name = element.name
-    var value = element.value
+    var element = elements[i];
+    var name = element.name;
+    var value = element.value;
     if (name) {
-      obj[ name ] = value
+      obj[ name ] = value;
     }
   }
-  return JSON.stringify(obj)
+  return JSON.stringify(obj);
 }
 if (form) {
   form.addEventListener('submit', event => {
-    event.preventDefault()
+    event.preventDefault();
     //получаем данные из формы
-    const json = toJSONString(form)
+    const json = toJSONString(form);
     //создаем соединение
-    const formReq = new XMLHttpRequest()
-    formReq.open('POST', '/telegram', true)
+    const formReq = new XMLHttpRequest();
+    formReq.open('POST', '/telegram', true);
     ///////////////////////////////////
     /////////////SweetAlert//////////
     ///////////////////////////////////
@@ -33,9 +33,10 @@ if (form) {
           icon: 'success',
           timer: 2000
         })
-        document.querySelector('.sa-success').style.display = 'block'
-        document.querySelector('.sa-button-container').style.opacity = '0'
+        document.querySelector('.sa-success').style.display = 'block';
+        document.querySelector('.sa-button-container').style.opacity = '0';
       }
+      alert(formReq.status);
       if (formReq.status !== 200) {
         swal({
           title: 'Произошла ошибка!',
