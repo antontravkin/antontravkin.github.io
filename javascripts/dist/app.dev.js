@@ -5,7 +5,7 @@ var form = document.getElementById(formId); //функция для захват
 
 function toJSONString(form) {
   var obj = {};
-  var elements = formReq.open("POST", "/telegram", false);
+  var elements = form.querySelectorAll('input, select, textarea');
   alert(elements);
 
   for (var i = 0; i < elements.length; ++i) {
