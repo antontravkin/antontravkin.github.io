@@ -27,6 +27,7 @@ if (form) {
     /////////////SweetAlert//////////
     ///////////////////////////////////
     //обрабатываем ответ сервера
+    console.log(formReq);
     formReq.onload = function(oEvent) {
       if (formReq.status === 200) {
         swal({
