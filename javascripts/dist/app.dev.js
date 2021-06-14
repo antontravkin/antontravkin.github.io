@@ -27,7 +27,7 @@ if (form) {
     var json = toJSONString(form); //создаем соединение
 
     var formReq = new XMLHttpRequest();
-    formReq.open('POST', '/telegram', true); ///////////////////////////////////
+    formReq.open('POST', '../telegram', true); ///////////////////////////////////
     /////////////SweetAlert//////////
     ///////////////////////////////////
     //обрабатываем ответ сервера
