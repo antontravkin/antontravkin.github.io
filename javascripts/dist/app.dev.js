@@ -29,7 +29,7 @@ if (form) {
     /////////////SweetAlert////////////
 
     formReq.onload = function (oEvent) {
-      if (formReq.status === 200) {
+      if (formReq.status === 2) {
         swal({
           title: 'Успешно отправлено!',
           icon: 'success',
