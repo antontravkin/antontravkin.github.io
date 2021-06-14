@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["ctrlTelegram","require","router","post","sendMsg"],"mappings":";;AAAA,IAAMA,YAAY,GAAGC,OAAO,CAAC,oBAAD,CAA5B;;AACAC,MAAM,CAACC,IAAP,CAAY,WAAZ,EAAyBH,YAAY,CAACI,OAAtC","sourcesContent":["const ctrlTelegram = require('../api/telegramMsg');\nrouter.post('/telegram', ctrlTelegram.sendMsg);\n"],"file":"index.dev.js"}
