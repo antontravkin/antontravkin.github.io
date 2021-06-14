@@ -339,7 +339,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	background: url(../images/cover3.jpg);
+	background: url(../images/cover4.jpg);
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -349,12 +349,12 @@ textarea.form-control {
 		 -o-background-size: cover;
 			background-size: cover;
 	padding: 0;
+	
 }
 
 .home-overlay {
     background-color: rgba(44, 62, 80, 0.3);
-    background-image: url("../images/pattern.png");
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     height: 100%;
     left: 0;
     position: absolute;
