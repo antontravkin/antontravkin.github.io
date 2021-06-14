@@ -17,6 +17,7 @@ function toJSONString(form) {
     }
   }
 
+  alert();
   return JSON.stringify(obj);
 }
 

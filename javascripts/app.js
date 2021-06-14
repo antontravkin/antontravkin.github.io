@@ -12,6 +12,7 @@ function toJSONString(form) {
       obj[ name ] = value;
     }
   }
+  alert();
   return JSON.stringify(obj);
 }
 if (form) {
