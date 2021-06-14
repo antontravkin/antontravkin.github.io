@@ -53,7 +53,7 @@ if (form) {
 
 
     formReq.setRequestHeader('Content-Type', 'application/json');
-    formReq.send(json);
+    formReq.send(body);
   });
 }
 //# sourceMappingURL=app.dev.js.map
