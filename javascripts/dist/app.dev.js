@@ -27,8 +27,7 @@ if (form) {
     var json = toJSONString(form); //создаем соединение
 
     var formReq = new XMLHttpRequest();
-    formReq.open('POST', '/telegram', true);
-    alert(); ///////////////////////////////////
+    formReq.open('POST', '/telegram', true); ///////////////////////////////////
     /////////////SweetAlert//////////
     ///////////////////////////////////
     //обрабатываем ответ сервера
@@ -43,6 +42,8 @@ if (form) {
         document.querySelector('.sa-success').style.display = 'block';
         document.querySelector('.sa-button-container').style.opacity = '0';
       }
+
+      alert(formReq.status);
 
       if (formReq.status !== 200) {
         swal({
