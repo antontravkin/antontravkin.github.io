@@ -6,7 +6,6 @@ var form = document.getElementById(formId); //функция для захват
 function toJSONString(form) {
   var obj = {};
   var elements = form.querySelectorAll('input, select, textarea');
-  alert(elements);
 
   for (var i = 0; i < elements.length; ++i) {
     var element = elements[i];
@@ -28,12 +27,10 @@ if (form) {
     var json = toJSONString(form); //создаем соединение
 
     var formReq = new XMLHttpRequest();
-    formReq.open('post', '/telegram', true); ///////////////////////////////////
+    formReq.open('POST', '/telegram', true); ///////////////////////////////////
     /////////////SweetAlert//////////
     ///////////////////////////////////
     //обрабатываем ответ сервера
-
-    console.log(formReq.status);
 
     formReq.onload = function (oEvent) {
       if (formReq.status === 200) {
@@ -45,8 +42,6 @@ if (form) {
         document.querySelector('.sa-success').style.display = 'block';
         document.querySelector('.sa-button-container').style.opacity = '0';
       }
-
-      alert(formReq.status);
 
       if (formReq.status !== 200) {
         swal({
