@@ -22,7 +22,7 @@ if (form) {
     alert (json)
     //создаем соединение
     const formReq = new XMLHttpRequest()
-    formReq.open('POST', '../telegram', true)
+    formReq.open('POST', 'https://antontravkin.github.io/telegram', true)
     ///////////////////////////////////
     /////////////SweetAlert//////////
     ///////////////////////////////////
