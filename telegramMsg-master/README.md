@@ -29,7 +29,7 @@ npm i
 npm start
 ```
 
- <h3>и откройте в браузере <a href='http://localhost:3000' target='_blank'>http://localhost:3000</a></h3>
+ <h3>и откройте в браузере <a href='https://localhost' target='_blank'>http://localhost</a></h3>
  
 ---
 
