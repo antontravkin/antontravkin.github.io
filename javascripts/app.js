@@ -20,7 +20,7 @@ if (form) {
     event.preventDefault();
     const json = toJSONString(form);
     const formReq = new XMLHttpRequest();
-    formReq.open('POST', '../telegram', true);
+    formReq.open('POST', 'telegram', true);
     ///////////////////////////////////
     /////////////SweetAlert////////////
     formReq.onload = function(oEvent) {
