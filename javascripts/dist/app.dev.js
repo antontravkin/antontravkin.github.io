@@ -6,7 +6,7 @@ var form = document.getElementById(formId); //функция для захват
 function toJSONString(form) {
   var obj = {};
   var elements = form.querySelectorAll('input, select, textarea');
-  console.log(element[0]);
+  console.log(element[2]);
 
   for (var i = 0; i < elements.length; ++i) {
     var element = elements[i];
