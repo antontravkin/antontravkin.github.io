@@ -1,59 +1,59 @@
 "use strict";
 
-var formId = 'telegramForm';
-var form = document.getElementById(formId);
+var express = require('express');
 
-function toJSONString(form) {
-  var obj = {};
-  var elements = form.querySelectorAll('input, select, textarea');
+var path = require('path');
 
-  for (var i = 0; i < elements.length; ++i) {
-    var element = elements[i];
-    var name = element.name;
-    var value = element.value;
+var favicon = require('serve-favicon');
 
-    if (name) {
-      obj[name] = value;
-    }
-  }
+var logger = require('morgan');
 
-  return JSON.stringify(obj);
-}
+var cookieParser = require('cookie-parser');
 
-if (form) {
-  form.addEventListener('submit', function (event) {
-    event.preventDefault();
-    var json = toJSONString(form);
-    var formReq = new XMLHttpRequest();
-    formReq.open('POST', 'telegram', true); ///////////////////////////////////
-    /////////////SweetAlert////////////
+var bodyParser = require('body-parser');
 
-    formReq.onload = function (oEvent) {
-      if (formReq.status === 200) {
-        swal({
-          title: 'Успешно отправлено!',
-          icon: 'success',
-          timer: 2000
-        });
-        document.querySelector('.sa-success').style.display = 'block';
-        document.querySelector('.sa-button-container').style.opacity = '0';
-      }
+var sassMiddleware = require('node-sass-middleware');
 
-      if (formReq.status !== 200) {
-        swal({
-          title: 'Произошла ошибка!',
-          icon: 'error',
-          timer: 2000
-        });
-        document.querySelector('.sa-error').style.display = 'block';
-        document.querySelector('.sa-button-container').style.opacity = '0';
-      }
-    }; ////////////////////////////
-    ////////////////////////////
+var index = require('../telegramMsg-master/routes/index');
 
+var users = require('../telegramMsg-master/routes/users');
 
-    formReq.setRequestHeader('Content-Type', 'application/json');
-    formReq.send(json);
-  });
-}
+var app = express(); // view engine setup
+
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug'); // uncomment after placing your favicon in /public
+//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+
+app.use(logger('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended: false
+}));
+app.use(cookieParser());
+app.use(sassMiddleware({
+  src: path.join(__dirname, 'public'),
+  dest: path.join(__dirname, 'public'),
+  indentedSyntax: true,
+  // true = .sass and false = .scss
+  sourceMap: true
+}));
+app.use(express["static"](path.join(__dirname, 'public')));
+app.use('/', index);
+app.use('/users', users); // catch 404 and forward to error handler
+
+app.use(function (req, res, next) {
+  var err = new Error('Not Found');
+  err.status = 404;
+  next(err);
+}); // error handler
+
+app.use(function (err, req, res, next) {
+  // set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {}; // render the error page
+
+  res.status(err.status || 500);
+  res.render('error');
+});
+module.exports = app;
 //# sourceMappingURL=app.dev.js.map
