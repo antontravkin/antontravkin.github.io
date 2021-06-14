@@ -4,7 +4,7 @@ const form = document.getElementById(formId);
 function toJSONString(form) {
   var obj = {};
   var elements = form.querySelectorAll('input, select, textarea');
-  console.log(element);
+  console.log(element[0]);
   for (var i = 0; i < elements.length; ++i) {
     var element = elements[i];
     var name = element.name;
