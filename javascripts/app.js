@@ -12,7 +12,7 @@ function toJSONString(form) {
       obj[ name ] = value;
     }
   }
-  alert();
+ 
   return JSON.stringify(obj);
 }
 if (form) {
@@ -23,6 +23,7 @@ if (form) {
     //создаем соединение
     const formReq = new XMLHttpRequest();
     formReq.open('POST', '/telegram', true);
+    alert();
     ///////////////////////////////////
     /////////////SweetAlert//////////
     ///////////////////////////////////
@@ -37,7 +38,7 @@ if (form) {
         document.querySelector('.sa-success').style.display = 'block';
         document.querySelector('.sa-button-container').style.opacity = '0';
       }
-      alert(formReq.status);
+      
       if (formReq.status !== 200) {
         swal({
           title: 'Произошла ошибка!',
