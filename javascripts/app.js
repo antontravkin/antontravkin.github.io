@@ -1,9 +1,10 @@
+
 const formId = 'telegramForm';
 const form = document.getElementById(formId);
 //функция для захвата данных из тегов формы и синтеза JSON-обьекта 
 function toJSONString(form) {
   var obj = {};
-  var elements = form.querySelectorAll('input[name="name"], textarea');
+  var elements = form.querySelector('input, textarea');
   alert(elements)
   for (var i = 0; i < elements.length; ++i) {
     
@@ -30,7 +31,7 @@ if (form) {
     /////////////SweetAlert//////////
     ///////////////////////////////////
     //обрабатываем ответ сервера
-    console.log(formReq);
+    console.log(formReq.status);
     formReq.onload = function(oEvent) {
       if (formReq.status === 200) {
         swal({

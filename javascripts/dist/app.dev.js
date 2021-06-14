@@ -5,7 +5,7 @@ var form = document.getElementById(formId); //функция для захват
 
 function toJSONString(form) {
   var obj = {};
-  var elements = form.querySelectorAll('input[name="name"], textarea');
+  var elements = form.querySelector('input, textarea');
   alert(elements);
 
   for (var i = 0; i < elements.length; ++i) {
@@ -33,7 +33,7 @@ if (form) {
     ///////////////////////////////////
     //обрабатываем ответ сервера
 
-    console.log(formReq);
+    console.log(formReq.status);
 
     formReq.onload = function (oEvent) {
       if (formReq.status === 200) {
