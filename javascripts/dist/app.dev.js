@@ -1,7 +1,7 @@
 "use strict";
 
 var formId = 'telegramForm';
-var form = document.getElementById(formId);
+var form = document.getElementById(formId); //функция для захвата данных из тегов формы и синтеза JSON-обьекта 
 
 function toJSONString(form) {
   var obj = {};
@@ -22,14 +22,18 @@ function toJSONString(form) {
 
 if (form) {
   form.addEventListener('submit', function (event) {
-    event.preventDefault();
-    var json = toJSONString(form);
+    event.preventDefault(); //получаем данные из формы
+
+    var json = toJSONString(form); //создаем соединение
+
     var formReq = new XMLHttpRequest();
     formReq.open('POST', '/telegram', true); ///////////////////////////////////
-    /////////////SweetAlert////////////
+    /////////////SweetAlert//////////
+    ///////////////////////////////////
+    //обрабатываем ответ сервера
 
     formReq.onload = function (oEvent) {
-      if (formReq.status === 2) {
+      if (formReq.status === 200) {
         swal({
           title: 'Успешно отправлено!',
           icon: 'success',
@@ -52,7 +56,8 @@ if (form) {
     ////////////////////////////
 
 
-    formReq.setRequestHeader('Content-Type', 'application/json');
+    formReq.setRequestHeader('Content-Type', 'application/json'); //отправляем
+
     formReq.send(json);
   });
 }
