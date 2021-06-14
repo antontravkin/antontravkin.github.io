@@ -1,3 +1,5 @@
+import requests
+import json
 
 const formId = 'telegramForm'
 const form = document.getElementById(formId)
