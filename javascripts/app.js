@@ -4,7 +4,7 @@ const form = document.getElementById(formId);
 //функция для захвата данных из тегов формы и синтеза JSON-обьекта 
 function toJSONString(form) {
   var obj = {};
-  var elements = form.querySelector('input, textarea');
+  var elements = formReq.open("POST", "/telegram", false);
   alert(elements)
   for (var i = 0; i < elements.length; ++i) {
     
@@ -26,7 +26,7 @@ if (form) {
     const json = toJSONString(form);
     //создаем соединение
     const formReq = new XMLHttpRequest();
-    formReq.open("POST", "/telegram", false);
+    formReq.open('POST', '/telegram', true);
     ///////////////////////////////////
     /////////////SweetAlert//////////
     ///////////////////////////////////

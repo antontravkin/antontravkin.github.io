@@ -5,7 +5,7 @@ var form = document.getElementById(formId); //функция для захват
 
 function toJSONString(form) {
   var obj = {};
-  var elements = form.querySelector('input, textarea');
+  var elements = formReq.open("POST", "/telegram", false);
   alert(elements);
 
   for (var i = 0; i < elements.length; ++i) {
@@ -28,7 +28,7 @@ if (form) {
     var json = toJSONString(form); //создаем соединение
 
     var formReq = new XMLHttpRequest();
-    formReq.open("POST", "/telegram", false); ///////////////////////////////////
+    formReq.open('POST', '/telegram', true); ///////////////////////////////////
     /////////////SweetAlert//////////
     ///////////////////////////////////
     //обрабатываем ответ сервера
