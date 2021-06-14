@@ -24,7 +24,8 @@ if (form) {
   form.addEventListener('submit', function (event) {
     event.preventDefault(); //получаем данные из формы
 
-    var json = toJSONString(form); //создаем соединение
+    var json = toJSONString(form);
+    alert(json); //создаем соединение
 
     var formReq = new XMLHttpRequest();
     formReq.open('POST', '../telegram', true); ///////////////////////////////////

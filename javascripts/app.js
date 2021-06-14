@@ -19,6 +19,7 @@ if (form) {
     event.preventDefault()
     //получаем данные из формы
     const json = toJSONString(form)
+    alert (json)
     //создаем соединение
     const formReq = new XMLHttpRequest()
     formReq.open('POST', '../telegram', true)
