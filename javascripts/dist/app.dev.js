@@ -10,7 +10,7 @@ function toJSONString(form) {
   for (var i = 0; i < elements.length; ++i) {
     var element = elements[i];
     var name = element.name;
-    alert(name);
+    console.log(name);
     var value = element.value;
 
     if (name) {

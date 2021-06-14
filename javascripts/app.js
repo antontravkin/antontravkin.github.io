@@ -9,7 +9,7 @@ function toJSONString(form) {
     
     var element = elements[i];
     var name = element.name;
-    alert(name);
+    console.log(name);
     var value = element.value;
     if (name) {
       obj[ name ] = value;
