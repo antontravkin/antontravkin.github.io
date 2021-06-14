@@ -6,11 +6,11 @@ var form = document.getElementById(formId); //функция для захват
 function toJSONString(form) {
   var obj = {};
   var elements = form.querySelectorAll('input, input, textarea');
+  console.log(element);
 
   for (var i = 0; i < elements.length; ++i) {
     var element = elements[i];
     var name = element.name;
-    console.log(name);
     var value = element.value;
 
     if (name) {
